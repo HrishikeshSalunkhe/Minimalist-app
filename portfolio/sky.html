@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hash Academy- Replica</title>
+    <meta name="author" content="Hrishikesh Salunkhe">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script>
+        // external js: isotope.pkgd.js
+
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.element-item',
+            layoutMode: 'fitRows'
+        });
+        // bind filter button click
+        $('.filters-button-group').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+        // change is-checked class on buttons
+        $('.button-group').each(function (i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', 'button', function () {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $(this).addClass('is-checked');
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg  bg-light navbar-bg">
+            <div class="container ">
+                <a class="navbar-brand" href="../index.html"><i class="fab fa-slack-hash logo"></i></a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../team.html">Team</a></li>
+                                <li><a class="dropdown-item" href="../contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a class="px-2" href=""><i class="fab fa-facebook-square"></i></a>
+                        <a class="px-2" href=""><i class="fab fa-twitter-square"></i></a>
+                        <a class="px-2" href=""><i class="fab fa-medium"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="p-3 my-5">
+        <div class="container">
+            <nav aria-label="breadcrumb" >
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Portfolio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sky is a Limit</li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-12 col-md-6 pt-5 pb-5">
+                    <h1>Sky is a Limit</h1>
+                </div>
+                <div class="col-12 col-md-6 pt-5 pb-5">
+                    <p>Image by enriquelopezgarre from Pixabay</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-12 ">
+                    <img src="../img/sky.jpg" class="img-fluid pt-3 pb-3"
+                        title="Image by enriquelopezgarre from Pixabay" alt=" Image of sky">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5 mb-5 pt-5 pb-5">
+        <div class="container page-footer">
+            <div class="row">
+                <div class="col-12 col-md-6">&copy; 2021. Lorem Ipsum</div>
+                <div class="col-12 col-md-3">123, XYZ, 456 ABC Road, PQR</div>
+                <div class="col-12 col-md-3">xyz@abc.com</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.min.js" async defer></script>
+    <script src="https://kit.fontawesome.com/388514b6f3.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js" async defer></script>
+
+</body>
+
+</html>

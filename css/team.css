@@ -1,0 +1,52 @@
+
+body{
+    font-family: 'Merriweather', monospace;
+    
+}
+
+/* Header Start*/
+.team, .headings {
+    background-color: #81c7d4 !important;
+}
+
+a{
+    color: #fff;
+}
+.dropdown-toggle{
+    color:#005caf;   
+}
+.logo{
+    color: #005caf;
+    transform: scale(2.0);
+}
+.navbar-brand{
+    width: 50%;
+    
+}
+/* Header END*/
+
+/* Main START*/
+.bdc{
+    color: #005caf;
+}
+
+#bdc-white{
+    color: #fff;
+}
+.img-thumbnail{
+    height: 200px;
+    width: 200px;
+}
+/* Main END*/
+
+/* Footer START*/
+footer{
+    color: #005caf;
+    font-size: 0.875rem;
+    border-top: 1px solid #005caf ;
+}
+.page-footer{
+    padding-left: 12%;
+}
+/* Footer END*/
+
